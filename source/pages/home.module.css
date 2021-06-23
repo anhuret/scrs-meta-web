@@ -1,0 +1,92 @@
+.container {
+	min-height: 100vh;
+	padding: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	background: black;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 12vh;
+	padding-right: 1.5rem;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	height: 80vh;
+}
+
+.footer {
+	height: 8vh;
+	color: green;
+	font-size: 1rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.prompt {
+	font-size: 3rem;
+	text-align: center;
+	color: green;
+}
+
+.echo {
+	font-size: 1.5rem;
+	color: green;
+}
+
+.logo {
+	width: 4rem;
+	height: 4rem;
+}
+
+.code {
+	background: #fafafa;
+	border-radius: 5px;
+	padding: 0.75rem;
+	font-size: 1.1rem;
+	font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+		Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+@media (max-width: 600px) {
+	.grid {
+		width: 100%;
+		flex-direction: column;
+	}
+}
+
+.blink {
+	animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
+
+.gear {
+	animation-name: spin;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
