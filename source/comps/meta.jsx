@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom'
 import styles from '../pages/home.module.css'
 
 export const Meta = () => (
-	<div className={styles.echo}>
-		<span> cat poolMetadata.json</span>
-		{/* prettier-ignore */}
-		<pre>
-		  <br/>{"{"}
+  <div className={styles.echo}>
+    <span> cat poolMetadata.json</span>
+    {/* prettier-ignore */}
+    <pre>
+			<br/> &#123;
 			<br/>    "ticker": "SCRS",
 			<br/>    "name": "Southern Cross",
-			<br/>    "description": "Secure, reliable pool from the heart of a lifelesslifeless  desert",
+			<br/>    "description": "Robust pool from the heart of a desert",
 			<br/>    "homepage": "https://scrs.irregular.one/"
-			<br/>{"}"}
-	  </pre>
-	</div>
+			<br/> &#125;
+		</pre>
+  </div>
 )

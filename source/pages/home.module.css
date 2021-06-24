@@ -1,10 +1,9 @@
-.container {
-	min-height: 100vh;
+.home {
+	height: 100vh;
+	width: 100vw;
 	padding: 0.5rem;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	height: 100vh;
 	background: black;
 }
 
@@ -12,7 +11,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 12vh;
+	height: 12%;
 	padding-right: 1.5rem;
 }
 
@@ -21,13 +20,12 @@
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: flex-start;
-	height: 80vh;
+	height: 80%;
 }
 
 .footer {
-	height: 8vh;
+	height: 8%;
 	color: green;
-	font-size: 1rem;
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
@@ -42,20 +40,12 @@
 .echo {
 	font-size: 1.5rem;
 	color: green;
+	white-space: pre;
 }
 
 .logo {
-	width: 4rem;
-	height: 4rem;
-}
-
-.code {
-	background: #fafafa;
-	border-radius: 5px;
-	padding: 0.75rem;
-	font-size: 1.1rem;
-	font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-		Bitstream Vera Sans Mono, Courier New, monospace;
+	width: 5rem;
+	height: 5rem;
 }
 
 @media (max-width: 600px) {
