@@ -1,16 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import styles from '../pages/home.module.css'
+import css from '../pages/home.module.css'
 
 export const Echo = () => (
-  <div className={styles.echo}>
+  <div className={css.echo}>
     <pre>
-      cat {'<<'} EOF {'>'} Message.txt
+      cat {'<<'} EOF {'>'} PoolStatement.txt
       <br />
       <br /> Welcome to Southern Cross !!!
+      <br />
       <br /> Secure and reliable Cardano pool
-      <br /> Forged and made possible by experienced DevOps geeks
-      <br /> Our goal is to make this a good home for your ADA
+      <br /> Forged and made possible by
+      <br /> Experienced DevOps geeks
+      <br /> Our life goal is to make this
+      <br /> A profitable home for your ADA
       <br /> Stake with us for your piece of mind
       <br />
       <br />

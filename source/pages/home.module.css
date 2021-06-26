@@ -1,82 +1,92 @@
 .home {
-	height: 100vh;
-	width: 100vw;
-	padding: 0.5rem;
-	display: flex;
-	flex-direction: column;
-	background: black;
-}
-
-.header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 12%;
-	padding-right: 1.5rem;
+  color: green;
+  background: black;
+  height: 100vh;
+  width: 100wh;
+  padding: 0.2em;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: flex-start;
-	height: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  padding-right: 1em;
+  padding-top: 0.5em;
 }
 
 .footer {
-	height: 8%;
-	color: green;
-	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
-}
-
-.prompt {
-	font-size: 3rem;
-	text-align: center;
-	color: green;
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 0.8em;
 }
 
 .echo {
-	font-size: 1.5rem;
-	color: green;
-	white-space: pre;
+  font-size: 1.5em;
+}
+
+.prompt {
+  font-size: 2.5em;
 }
 
 .logo {
-	width: 5rem;
-	height: 5rem;
+  width: 3em;
+  height: 3em;
 }
 
-@media (max-width: 600px) {
-	.grid {
-		width: 100%;
-		flex-direction: column;
-	}
+.spin {
+  animation-name: spiner;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .blink {
-	animation: blinker 1s linear infinite;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes spiner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes blinker {
-	50% {
-		opacity: 0;
-	}
+  50% {
+    opacity: 0;
+  }
 }
 
-.gear {
-	animation-name: spin;
-	animation-duration: 10s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-}
+@media (max-width: 600px) {
+  .echo {
+    font-size: 1.2em;
+  }
 
-@keyframes spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+  .prompt {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .footer {
+    font-size: 0.7;
+  }
+
+  .logo {
+    width: 3em;
+    height: 3em;
+  }
 }
