@@ -20,6 +20,6 @@ export default {
 		port: 1234,
   },
   buildOptions: {
-    /* ... */
+		out: "static",
   },
 };
