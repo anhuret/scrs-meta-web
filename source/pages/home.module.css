@@ -10,8 +10,18 @@
   height: 100%;
 }
 
-.start {
+.star {
   position: absolute;
+  filter: drop-shadow(0 1em 1em green);
+}
+
+.star:hover {
+  filter: brightness(1.5);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.start {
   width: 3em;
   height: 3em;
   top: 4%;
@@ -19,7 +29,6 @@
 }
 
 .starb {
-  position: absolute;
   width: 4em;
   height: 4em;
   top: 85%;
@@ -27,7 +36,6 @@
 }
 
 .starl {
-  position: absolute;
   width: 3em;
   height: 3em;
   top: 40%;
@@ -35,7 +43,6 @@
 }
 
 .starr {
-  position: absolute;
   width: 3em;
   height: 3em;
   top: 20%;
@@ -43,7 +50,6 @@
 }
 
 .starm {
-  position: absolute;
   width: 2em;
   height: 2em;
   top: 50%;
@@ -69,10 +75,10 @@
   padding-top: 0.5em;
 }
 
-.footer {
+.foot {
   height: 10%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-end;
   font-size: 0.8em;
 }
@@ -90,9 +96,13 @@
   height: 3em;
 }
 
+.tip {
+  font-size: 1.2em;
+}
+
 .spin {
   animation-name: spiner;
-  animation-duration: 10s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -126,8 +136,10 @@
     font-weight: bold;
   }
 
-  .footer {
+  .foot {
     font-size: 0.7;
+    display: flex;
+    justify-content: space-between;
   }
 
   .logo {
