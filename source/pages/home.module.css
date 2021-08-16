@@ -1,3 +1,55 @@
+.main {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.space {
+  position: relative;
+  aspect-ratio: 9 / 14;
+  height: 100%;
+}
+
+.start {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  top: 4%;
+  left: 35%;
+}
+
+.starb {
+  position: absolute;
+  width: 4em;
+  height: 4em;
+  top: 85%;
+  left: 65%;
+}
+
+.starl {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  top: 40%;
+  left: 4%;
+}
+
+.starr {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  top: 20%;
+  left: 82%;
+}
+
+.starm {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  top: 50%;
+  left: 65%;
+}
+
 .home {
   color: green;
   background: black;
@@ -6,13 +58,6 @@
   padding: 0.2em;
   display: flex;
   flex-direction: column;
-}
-
-.main {
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 
 .header {
