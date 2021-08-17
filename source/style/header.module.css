@@ -2,9 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10%;
-  padding-right: 1em;
-  padding-top: 0.5em;
+  height: 8%;
+  padding: 0 0.5em;
 }
 
 .prompt {
@@ -54,7 +53,11 @@
   }
 
   .logo {
-    width: 3em;
-    height: 3em;
+    width: 2.5em;
+    height: 2.5em;
+  }
+
+  .tip {
+    font-size: 1em;
   }
 }
