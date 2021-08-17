@@ -7,9 +7,11 @@ export const Space = () => {
   const [tip, setTip] = useStore('tip')
   useEffect(() => setTip(''), [])
   const navigate = useNavigate()
+
   return (
     <section className={css.space}>
       <figure
+        onClick={() => navigate('/metadata')}
         onMouseEnter={() => setTip('Metadata')}
         onMouseLeave={() => setTip('')}
         className={`${css.star} ${css.start}`}
@@ -17,6 +19,7 @@ export const Space = () => {
         <img src={'/images/star.svg'} />
       </figure>
       <figure
+        onClick={() => navigate('/updates')}
         onMouseEnter={() => setTip('Updates')}
         onMouseLeave={() => setTip('')}
         className={`${css.star} ${css.starb}`}
@@ -32,6 +35,7 @@ export const Space = () => {
         <img src={'/images/star.svg'} />
       </figure>
       <figure
+        onClick={() => navigate('/statistics')}
         onMouseEnter={() => setTip('Statistics')}
         onMouseLeave={() => setTip('')}
         className={`${css.star} ${css.starr}`}
@@ -39,6 +43,7 @@ export const Space = () => {
         <img src={'/images/star.svg'} />
       </figure>
       <figure
+        onClick={() => navigate('/about')}
         onMouseEnter={() => setTip('About')}
         onMouseLeave={() => setTip('')}
         className={`${css.star} ${css.starm}`}
