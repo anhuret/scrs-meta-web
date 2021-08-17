@@ -16,6 +16,10 @@
   height: 3em;
 }
 
+.logo:hover {
+  cursor: pointer;
+}
+
 .tip {
   font-size: 1.2em;
 }
