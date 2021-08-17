@@ -5,6 +5,7 @@ import css from '../style/header.module.css'
 
 export const Header = () => {
   const [tip, setTip] = useStore('tip')
+  const [burst, setBurst] = useStore('burst')
   const navigate = useNavigate()
   return (
     <header className={css.header}>
@@ -12,7 +13,12 @@ export const Header = () => {
         SCRS@cardano:~<span className={css.blink}>$</span>
       </div>
       <div className={css.tip}>{tip}</div>
-      <figure onClick={() => navigate('/')} className={css.logo}>
+      <figure
+        onClick={() => navigate('/')}
+        className={css.logo}
+        onMouseEnter={() => setBurst(true)}
+        onMouseLeave={() => setBurst(false)}
+      >
         <img src={'/images/cardano.svg'} className={css.spin} />
       </figure>
     </header>

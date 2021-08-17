@@ -9,6 +9,11 @@
   filter: drop-shadow(0 1em 1em green);
 }
 
+.burst {
+  filter: brightness(1.5);
+  transform: scale(1.2);
+}
+
 .star:hover {
   filter: brightness(1.5);
   cursor: pointer;
@@ -49,4 +54,3 @@
   top: 50%;
   left: 65%;
 }
-

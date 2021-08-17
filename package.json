@@ -9,10 +9,10 @@
     "reset": "rm -rf node_modules yarn.lock && yarn cache clean && yarn install"
   },
   "dependencies": {
-    "history": "^5.0.0",
+    "history": "5.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-router-dom": "^6.0.0-beta.0"
+    "react-router-dom": "6.0.0-beta.1"
   },
   "devDependencies": {
     "@snowpack/plugin-dotenv": "2.1.0",

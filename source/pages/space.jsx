@@ -5,6 +5,7 @@ import css from '../style/space.module.css'
 
 export const Space = () => {
   const [tip, setTip] = useStore('tip')
+  const [burst, setBurst] = useStore('burst')
   useEffect(() => setTip(''), [])
   const navigate = useNavigate()
 
@@ -14,7 +15,7 @@ export const Space = () => {
         onClick={() => navigate('/metadata')}
         onMouseEnter={() => setTip('Metadata')}
         onMouseLeave={() => setTip('')}
-        className={`${css.star} ${css.start}`}
+        className={`${burst ? css.burst : ''} ${css.star} ${css.start}`}
       >
         <img src={'/images/star.svg'} />
       </figure>
@@ -22,7 +23,7 @@ export const Space = () => {
         onClick={() => navigate('/updates')}
         onMouseEnter={() => setTip('Updates')}
         onMouseLeave={() => setTip('')}
-        className={`${css.star} ${css.starb}`}
+        className={`${burst ? css.burst : ''} ${css.star} ${css.starb}`}
       >
         <img src={'/images/star.svg'} />
       </figure>
@@ -30,7 +31,7 @@ export const Space = () => {
         onClick={() => navigate('/statement')}
         onMouseEnter={() => setTip('Statement')}
         onMouseLeave={() => setTip('')}
-        className={`${css.star} ${css.starl}`}
+        className={`${burst ? css.burst : ''} ${css.star} ${css.starl}`}
       >
         <img src={'/images/star.svg'} />
       </figure>
@@ -38,7 +39,7 @@ export const Space = () => {
         onClick={() => navigate('/statistics')}
         onMouseEnter={() => setTip('Statistics')}
         onMouseLeave={() => setTip('')}
-        className={`${css.star} ${css.starr}`}
+        className={`${burst ? css.burst : ''} ${css.star} ${css.starr}`}
       >
         <img src={'/images/star.svg'} />
       </figure>
@@ -46,7 +47,7 @@ export const Space = () => {
         onClick={() => navigate('/about')}
         onMouseEnter={() => setTip('About')}
         onMouseLeave={() => setTip('')}
-        className={`${css.star} ${css.starm}`}
+        className={`${burst ? css.burst : ''} ${css.star} ${css.starm}`}
       >
         <img src={'/images/star.svg'} />
       </figure>
