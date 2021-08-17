@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import { Route, Routes } from 'react-router-dom'
 import { useStore } from '../store/store.js'
-import css from '../style/main.module.css'
+import css from './home.module.css'
 
 export const Main = () => {
   const [tip, setTip] = useStore('tip')

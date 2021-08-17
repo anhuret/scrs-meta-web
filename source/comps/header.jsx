@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useStore } from '../store/store.js'
-import css from './home.module.css'
+import css from '../style/header.module.css'
 
 export const Header = () => {
   const [tip, setTip] = useStore('tip')

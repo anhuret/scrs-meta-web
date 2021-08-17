@@ -1,0 +1,13 @@
+.footer {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 0.8em;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    font-size: 0.7;
+  }
+}
