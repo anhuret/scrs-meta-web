@@ -3,11 +3,8 @@ import { Route, Routes } from 'react-router-dom'
 import { useStore } from '../store/store.js'
 import css from '../style/main.module.css'
 import { Space } from './space.js'
-import { Statement } from './statement.js'
-import { Updates } from './updates.js'
 import { Statistics } from './statistics.js'
-import { Metadata } from './metadata.js'
-import { About } from './about.js'
+import { View } from './view.js'
 
 export const Main = () => {
   const [tip, setTip] = useStore('tip')
@@ -15,11 +12,11 @@ export const Main = () => {
   return (
     <main className={css.main}>
       <Routes>
-        <Route path="/statement" element={<Statement />} />
-        <Route path="/updates" element={<Updates />} />
+        <Route path="/statement" element={<View name="statement" />} />
+        <Route path="/updates" element={<View name="updates" />} />
         <Route path="/statistics" element={<Statistics />} />
-        <Route path="/metadata" element={<Metadata />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/metadata" element={<View name="metadata" />} />
+        <Route path="/about" element={<View name="about" />} />
         <Route path="/" element={<Space />} />
       </Routes>
     </main>

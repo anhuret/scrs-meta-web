@@ -6,15 +6,16 @@ import css from '../style/space.module.css'
 export const Space = () => {
   const [tip, setTip] = useStore('tip')
   const [burst, setBurst] = useStore('burst')
-  useEffect(() => setTip(''), [])
+  //useEffect(() => setTip(''), [])
   const navigate = useNavigate()
+  let resetTip = 'Southern Cross'
 
   return (
     <section className={css.space}>
       <figure
         onClick={() => navigate('/metadata')}
         onMouseEnter={() => setTip('Metadata')}
-        onMouseLeave={() => setTip('')}
+        onMouseLeave={() => setTip(resetTip)}
         className={`${burst ? css.burst : ''} ${css.star} ${css.start}`}
       >
         <img src={'/images/star.svg'} />
@@ -22,7 +23,7 @@ export const Space = () => {
       <figure
         onClick={() => navigate('/updates')}
         onMouseEnter={() => setTip('Updates')}
-        onMouseLeave={() => setTip('')}
+        onMouseLeave={() => setTip(resetTip)}
         className={`${burst ? css.burst : ''} ${css.star} ${css.starb}`}
       >
         <img src={'/images/star.svg'} />
@@ -30,7 +31,7 @@ export const Space = () => {
       <figure
         onClick={() => navigate('/statement')}
         onMouseEnter={() => setTip('Statement')}
-        onMouseLeave={() => setTip('')}
+        onMouseLeave={() => setTip(resetTip)}
         className={`${burst ? css.burst : ''} ${css.star} ${css.starl}`}
       >
         <img src={'/images/star.svg'} />
@@ -38,7 +39,7 @@ export const Space = () => {
       <figure
         onClick={() => navigate('/statistics')}
         onMouseEnter={() => setTip('Statistics')}
-        onMouseLeave={() => setTip('')}
+        onMouseLeave={() => setTip(resetTip)}
         className={`${burst ? css.burst : ''} ${css.star} ${css.starr}`}
       >
         <img src={'/images/star.svg'} />
@@ -46,7 +47,7 @@ export const Space = () => {
       <figure
         onClick={() => navigate('/about')}
         onMouseEnter={() => setTip('About')}
-        onMouseLeave={() => setTip('')}
+        onMouseLeave={() => setTip(resetTip)}
         className={`${burst ? css.burst : ''} ${css.star} ${css.starm}`}
       >
         <img src={'/images/star.svg'} />

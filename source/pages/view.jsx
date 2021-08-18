@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react'
 import Mark from 'react-markdown'
 import css from '../style/view.module.css'
 
-export const Updates = () => {
-  let [mark, setMark] = useState('')
+export const View = (props) => {
+  const [mark, setMark] = useState('')
   useEffect(() => {
-    getFile().then(setMark).catch(console.log)
+    getMark(props.name).then(setMark).catch(console.log)
   }, [])
 
   return (
@@ -17,8 +17,9 @@ export const Updates = () => {
   )
 }
 
-const getFile = async () => {
-  let r = await fetch('/markdown/updates.md')
+const getMark = async (name) => {
+  let path = `/markdown/${name}.md`
+  let r = await fetch(path)
   if (!r.ok) {
     throw new Error(await r.text())
   }

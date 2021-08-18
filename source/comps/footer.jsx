@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <footer className={css.footer}>
       <span>Слава Україні! Героям слава!</span>
-      <span>Southern Cross - Cardano Pool, {d}</span>
+      <span>Southern Cross, {d}</span>
     </footer>
   )
 }

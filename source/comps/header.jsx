@@ -7,6 +7,11 @@ export const Header = () => {
   const [tip, setTip] = useStore('tip')
   const [burst, setBurst] = useStore('burst')
   const navigate = useNavigate()
+  const logoClick = () => {
+    setTip('Southern Cross')
+    navigate('/')
+  }
+
   return (
     <header className={css.header}>
       <div className={css.prompt}>
@@ -14,7 +19,7 @@ export const Header = () => {
       </div>
       <div className={css.tip}>{tip}</div>
       <figure
-        onClick={() => navigate('/')}
+        onClick={logoClick}
         className={css.logo}
         onMouseEnter={() => setBurst(true)}
         onMouseLeave={() => setBurst(false)}
