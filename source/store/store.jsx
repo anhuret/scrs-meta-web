@@ -9,7 +9,7 @@ const Store = createContext(null)
 
 export const StoreProvider = ({ children }) => {
   const [burst, setBurst] = React.useState(false)
-  const [tip, setTip] = React.useState('Southern Cross')
+  const [tip, setTip] = React.useState('')
 
   const store = {
     burst: [burst, setBurst],

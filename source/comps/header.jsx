@@ -8,7 +8,7 @@ export const Header = () => {
   const [burst, setBurst] = useStore('burst')
   const navigate = useNavigate()
   const logoClick = () => {
-    setTip('Southern Cross')
+    setTip('')
     navigate('/')
   }
 
