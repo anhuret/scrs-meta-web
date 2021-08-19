@@ -1,12 +1,15 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import css from '../style/main.module.css'
+import { Header } from './header.js'
+import { Footer } from './footer.js'
 import { Space } from './space.js'
 import { View } from './view.js'
+import css from '../style/main.module.css'
 
-export const Main = () => {
-  return (
-    <main className={css.main}>
+export const Main = () => (
+  <div className={css.main}>
+    <Header />
+    <main>
       <Routes>
         <Route path="/statement" element={<View name="statement" />} />
         <Route path="/updates" element={<View name="updates" />} />
@@ -16,5 +19,6 @@ export const Main = () => {
         <Route path="/" element={<Space />} />
       </Routes>
     </main>
-  )
-}
+    <Footer />
+  </div>
+)

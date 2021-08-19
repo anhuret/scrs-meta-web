@@ -3,7 +3,7 @@ import { render } from 'react-dom'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 import { StoreProvider } from '../store/store.jsx'
-import { Home } from '../pages/home.js'
+import { Main } from '../pages/main.js'
 
 import './reset.css'
 import './global.css'
@@ -12,7 +12,7 @@ render(
   <React.StrictMode>
     <Router>
       <StoreProvider>
-        <Home />
+        <Main />
       </StoreProvider>
     </Router>
   </React.StrictMode>,
