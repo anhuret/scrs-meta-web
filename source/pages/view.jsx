@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import Mark from 'react-markdown'
+import { useStore } from '../store/store.js'
+import { cap } from '../entry/utils.js'
 import css from '../style/view.module.css'
 
 export const View = (props) => {
   const [mark, setMark] = useState('')
+  const [tip, setTip] = useStore('tip')
   useEffect(() => {
+    setTip(cap(props.name))
     getMark(props.name).then(setMark).catch(console.log)
   }, [])
 

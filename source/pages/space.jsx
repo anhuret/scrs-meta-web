@@ -12,8 +12,8 @@ export const Space = () => {
   return (
     <section className={css.space}>
       <figure
-        onClick={() => navigate('/metadata')}
-        onMouseEnter={() => setTip('Metadata')}
+        onClick={() => navigate('/about')}
+        onMouseEnter={() => setTip('About')}
         onMouseLeave={() => setTip('')}
         className={`${burst ? css.burst : ''} ${css.star} ${css.start}`}
       >
@@ -44,8 +44,8 @@ export const Space = () => {
         <img src={'/images/star.svg'} />
       </figure>
       <figure
-        onClick={() => navigate('/about')}
-        onMouseEnter={() => setTip('About')}
+        onClick={() => navigate('/metadata')}
+        onMouseEnter={() => setTip('Metadata')}
         onMouseLeave={() => setTip('')}
         className={`${burst ? css.burst : ''} ${css.star} ${css.starm}`}
       >
