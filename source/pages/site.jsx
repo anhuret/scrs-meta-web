@@ -4,12 +4,12 @@ import { Header } from './header.js'
 import { Footer } from './footer.js'
 import { Space } from './space.js'
 import { View } from './view.js'
-import css from '../style/main.module.css'
+import css from '../style/site.module.css'
 
-export const Main = () => (
-  <div className={css.main}>
+export const Site = () => (
+  <div className={css.site}>
     <Header />
-    <main>
+    <main className={css.main}>
       <Routes>
         <Route path="/statement" element={<View name="statement" />} />
         <Route path="/updates" element={<View name="updates" />} />

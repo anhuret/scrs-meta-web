@@ -3,16 +3,16 @@ import { render } from 'react-dom'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 import { StoreProvider } from '../store/store.jsx'
-import { Main } from '../pages/main.js'
+import { Site } from '../pages/site.js'
 
-import './reset.css'
-import './global.css'
+import '../style/reset.css'
+import '../style/global.css'
 
 render(
   <React.StrictMode>
     <Router>
       <StoreProvider>
-        <Main />
+        <Site />
       </StoreProvider>
     </Router>
   </React.StrictMode>,
