@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import Mark from 'react-markdown'
+import MD from 'react-markdown'
 import { useStore } from '../store/store.js'
 import { cap } from '../entry/utils.js'
-import css from '../style/view.module.css'
+import css from '../style/mark.module.css'
 
-export const View = (props) => {
+export const Mark = (props) => {
   const [mark, setMark] = useState('')
   const [tip, setTip] = useStore('tip')
   useEffect(() => {
@@ -13,9 +13,9 @@ export const View = (props) => {
   }, [])
 
   return (
-    <section className={css.view}>
+    <section className={css.mark}>
       <pre>
-        <Mark>{mark}</Mark>
+        <MD>{mark}</MD>
       </pre>
     </section>
   )
