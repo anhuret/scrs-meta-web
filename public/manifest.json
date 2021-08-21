@@ -1,0 +1,23 @@
+{
+  "short_name": "SCRS",
+  "name": "Southern Cross",
+  "icons": [
+    {
+      "src": "/images/star.svg",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/images/cardano.svg",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/images/cardano.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "green",
+  "background_color": "black"
+}
