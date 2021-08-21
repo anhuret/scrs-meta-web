@@ -8,7 +8,7 @@ export const Space = () => {
   const [burst, setBurst] = useStore('burst')
   useEffect(() => setTip(''), [])
   const navigate = useNavigate()
-  const imgpth = '/images/star.svg'
+  const star = '/images/star.svg'
 
   return (
     <section className={css.space}>
@@ -18,7 +18,8 @@ export const Space = () => {
         onMouseLeave={() => setTip('')}
         className={`${burst ? css.burst : ''} ${css.star} ${css.start}`}
       >
-        <img src={imgpth} />
+        <span className={`${burst ? css.show : ''} ${css.tip}`}> About </span>
+        <img src={star} />
       </figure>
       <figure
         onClick={() => navigate('/updates')}
@@ -26,7 +27,8 @@ export const Space = () => {
         onMouseLeave={() => setTip('')}
         className={`${burst ? css.burst : ''} ${css.star} ${css.starb}`}
       >
-        <img src={imgpth} />
+        <span className={`${burst ? css.show : ''} ${css.tip}`}>Updates</span>
+        <img src={star} />
       </figure>
       <figure
         onClick={() => navigate('/statement')}
@@ -34,7 +36,8 @@ export const Space = () => {
         onMouseLeave={() => setTip('')}
         className={`${burst ? css.burst : ''} ${css.star} ${css.starl}`}
       >
-        <img src={imgpth} />
+        <span className={`${burst ? css.show : ''} ${css.tip}`}>Statement</span>
+        <img src={star} />
       </figure>
       <figure
         onClick={() => navigate('/statistics')}
@@ -42,7 +45,10 @@ export const Space = () => {
         onMouseLeave={() => setTip('')}
         className={`${burst ? css.burst : ''} ${css.star} ${css.starr}`}
       >
-        <img src={imgpth} />
+        <span className={`${burst ? css.show : ''} ${css.tip}`}>
+          Statistics
+        </span>
+        <img src={star} />
       </figure>
       <figure
         onClick={() => navigate('/metadata')}
@@ -50,7 +56,11 @@ export const Space = () => {
         onMouseLeave={() => setTip('')}
         className={`${burst ? css.burst : ''} ${css.star} ${css.starm}`}
       >
-        <img src={imgpth} />
+        <span className={`${burst ? css.show : ''} ${css.tip}`}>
+          {' '}
+          Metadata{' '}
+        </span>
+        <img src={star} />
       </figure>
     </section>
   )

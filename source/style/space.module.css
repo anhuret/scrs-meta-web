@@ -9,6 +9,16 @@
   filter: drop-shadow(0 1em 1em green);
 }
 
+.tip {
+  font-size: 0.7em;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
 .burst {
   filter: brightness(1.5);
   transform: scale(1.2);
