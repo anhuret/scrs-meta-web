@@ -8,6 +8,7 @@ export const Space = () => {
   const [burst, setBurst] = useStore('burst')
   useEffect(() => setTip(''), [])
   const navigate = useNavigate()
+  const imgpth = '/images/star.svg'
 
   return (
     <section className={css.space}>
@@ -17,7 +18,7 @@ export const Space = () => {
         onMouseLeave={() => setTip('')}
         className={`${burst ? css.burst : ''} ${css.star} ${css.start}`}
       >
-        <img src={'/images/star.svg'} />
+        <img src={imgpth} />
       </figure>
       <figure
         onClick={() => navigate('/updates')}
@@ -25,7 +26,7 @@ export const Space = () => {
         onMouseLeave={() => setTip('')}
         className={`${burst ? css.burst : ''} ${css.star} ${css.starb}`}
       >
-        <img src={'/images/star.svg'} />
+        <img src={imgpth} />
       </figure>
       <figure
         onClick={() => navigate('/statement')}
@@ -33,7 +34,7 @@ export const Space = () => {
         onMouseLeave={() => setTip('')}
         className={`${burst ? css.burst : ''} ${css.star} ${css.starl}`}
       >
-        <img src={'/images/star.svg'} />
+        <img src={imgpth} />
       </figure>
       <figure
         onClick={() => navigate('/statistics')}
@@ -41,7 +42,7 @@ export const Space = () => {
         onMouseLeave={() => setTip('')}
         className={`${burst ? css.burst : ''} ${css.star} ${css.starr}`}
       >
-        <img src={'/images/star.svg'} />
+        <img src={imgpth} />
       </figure>
       <figure
         onClick={() => navigate('/metadata')}
@@ -49,7 +50,7 @@ export const Space = () => {
         onMouseLeave={() => setTip('')}
         className={`${burst ? css.burst : ''} ${css.star} ${css.starm}`}
       >
-        <img src={'/images/star.svg'} />
+        <img src={imgpth} />
       </figure>
     </section>
   )
